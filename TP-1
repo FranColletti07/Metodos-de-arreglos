@@ -13,28 +13,32 @@ primeras cinco.
 var estaturas=[190, 186, 178, 179, 170, 158, 180, 175, 176, 168];
 estaturas.push(201);
 document.write(estaturas.join("<br>"));
-document.write("<br>-------------------------------------------------------------------------------- <br>")
+document.write("<br>-------------------------------------------------------------------------------- <br>");
 //2
 var jugadores=[];
-for(i=0;i<5;i++){
+for(let i=0;i<5;i++){
     jugadores[i] = prompt("Ingese el nombre de 5 jugadores");
 }
-jugadores.unshift("Borges");
-document.write(jugadores.join("<br>"))
-document.write("<br>-------------------------------------------------------------------------------- <br>")
+jugadores.unshift("Julian Alvarez");
+document.write(jugadores.join("<br>"));
+document.write("<br>-------------------------------------------------------------------------------- <br>");
 //3
 jugadores.pop();
+document.write(jugadores.join("<br>"));
+document.write("<br>-------------------------------------------------------------------------------- <br>");
 //4
-estaturas.pop();
-estaturas.pop();
-estaturas.pop();
+for(let i=0;i<3;i++){
+    estaturas.pop();
+}
+document.write(estaturas.join("<br>"));
+document.write("<br>-------------------------------------------------------------------------------- <br>");
 //5
 var edades=[];
 var n = parseInt(prompt("Ingrese el numero de personas"));
-for(i=0;i<n;i++){
+for(let i=0;i<n;i++){
     edades[i]=parseInt(prompt("Ingrese la edad de la persona n°" + (i+1)));
 }
-for(i=0;i<5;i++){
+for(let i=0;i<5;i++){
 edades.shift();
 }
-document.write(edades.join("<br> "))
+document.write(edades.join("<br>"));
