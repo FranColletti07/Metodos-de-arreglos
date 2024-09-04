@@ -7,26 +7,26 @@ var aumento = precios.map(precios => (((precios*15)/100) + precios));
 //a. Recorrer el arreglo de precios y aplicar un aumento del 15%:
 document.write("Precios con aumento del %15: " + aumento.join(" - "));
 //b. Filtrar los precios que sean iguales a 230:
-var b = precios.filter(ActB => ActB==230);
+var b = aumento.filter(ActB => ActB==230);
 console.log(b);
 //c. Filtrar los precios comprendidos entre 300 y 500:
-var c = precios.filter(ActC => ActC>=300 && ActC<500);
+var c = aumento.filter(ActC => ActC>=300 && ActC<500);
 console.log(c);
 //d. Filtrar los precios mayores a 400:
-var d = precios.filter(ActD => ActD>=400);
+var d = aumento.filter(ActD => ActD>=400);
 console.log(d);
 //e. Filtrar los precios menores a 200:
-var e = precios.filter(ActE => ActE<200);
+var e = aumento.filter(ActE => ActE<200);
 console.log(e);
 //f. Filtrar los precios distintos a 345:
-var f = precios.filter(ActF => ActF!=345);
+var f = aumento.filter(ActF => ActF!=345);
 console.log(f);
 //g. Filtrar los precios que no sean 460:
-var g = precios.filter(ActG => ActG!=460);
+var g = aumento.filter(ActG => ActG!=460);
 console.log(g);
 //h. Filtrar los precios con operador lógico O (mayores a 500 o menores a 200):
-var h = precios.filter(ActH => ActH>500 || ActH<200);
+var h = aumento.filter(ActH => ActH>500 || ActH<200);
 console.log(h);
 //i. Filtrar categorías de productos (por ejemplo, precios iguales a 345): 
-var i = precios.filter(ActI => ActI==345);
+var i = aumento.filter(ActI => ActI==345);
 console.log(i);
